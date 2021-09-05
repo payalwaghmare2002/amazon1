@@ -261,12 +261,3 @@ padding:0px;
   display: table;
   clear: both;
 }
-@media (max-width: 1199.98px) {
-  body::before {
-    content: 'Best on wider screens.';
-    display: block;
-    margin: 1em;
-    font-weight: bold;
-    color: #444;
-  }
-}

@@ -38,15 +38,7 @@ body {
   color: black;
   line-height: 5px;
 }
-@media (max-width: 520px) {
-  body::before {
-    content: 'Best on wider screens.';
-    display: block;
-    margin: 1em;
-    font-weight: bold;
-    color: #444;
-  }
-}
+
 
 @media (prefers-reduced-motion) {
   .flex {
