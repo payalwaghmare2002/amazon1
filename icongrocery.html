@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+	<link rel="stylesheet" type="text/css" href="product.css" />
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
+<style>
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+</style>
+</head>
+<body>
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+  <center><h1 style="color:white">Grocery</h1>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<a href="login.html" class="navbar-brand">Login</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+				  <a href="#"id="a">Top Offers</a>
+				  <a href="#"id="a">Electronics</a>
+				  <a href="iconfur.html"id="a">Furniture</a>
+				  <a href="iconfashion.html"id="a">Fashion</a>
+				  <a href="#"id="a">Mobile</a>
+				  <a href="iconlaptop.html"id="a">Laptop</a>
+				  <a href="iconhomeapp.html"id="a">Home Appliances</a>
+            </div>
+        </div>
+    </nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+  </ul>  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="gad10.jpg" width="100%" height="500" class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="gad3.jpg" width="100%" height="500" class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="gad8.jpg" width="100%" height="500" class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="gad4.jpg" width="100%" height="500" class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="gad2.png" width="100%" height="500" class="img">
+    </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+
+<div class="main">
+<hr/>
+<div id="myBtnContainer">
+  <button class="btn1 active" onclick="filterSelection('all')"><h4 class="responsive-font-example"> Show all</h4></button>
+  <button class="btn1" onclick="filterSelection('grain')"> <h4 class="responsive-font-example">Grains and Atta</h4></button>
+  <button class="btn1" onclick="filterSelection('pulses')"> <h4 class="responsive-font-example">Pulses & Dals</h4></button>
+  <button class="btn1" onclick="filterSelection('dryf')"> <h4 class="responsive-font-example">Dry Fruits</h4></button>
+  <button class="btn1" onclick="filterSelection('oil')"> <h4 class="responsive-font-example">Oils</h4></button>
+  <button class="btn1" onclick="filterSelection('dairy')"> <h4 class="responsive-font-example">Dairy Products</h4></button>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+<div class="column grain">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pgrain1.jfif"width="300px"height="300px"/></td>
+				<td><h3>AASHIRVAAD Superior MP Atta  (10 kg)<br><br>
+				₹480&emsp;<strike>₹490</strike><br>38%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pgrain2.jpg"width="300px"height="300px"/></td>
+				<td><h3>Big Basket Royal Jowar,  (5 kg) pouch <br><br>
+				₹299&emsp;<strike>₹450</strike><br>34%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pgrain3.jpg" width="300px"height="300px"/></td>
+				<td><h3>Big Basket Royal Bajra, (1 kg) pouch<br><br>
+				₹50&emsp;<strike>₹90</strike><br>38%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pgrain5.jpg"width="300px"height="300px"/></td>
+				<td><h3>India Gate Basmati Rice, Rozana, 5kg<br><br>
+				₹349&emsp;<strike>₹475</strike><br>25%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="pgrain4.jpg"width="250px"height="300px"/></td>
+				<td><h3>Daawat Pulav Basmati Rice, 1kg pouch<br><br>
+				₹99&emsp;<strike>₹139</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+<div class="column pulses">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pdal1.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Trinetra Red Masoor Dal (Split)  (1000 g))<br><br>
+				₹275&emsp;<strike>₹599</strike><br>54%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pdal2.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Trinetra Yellow Chana Dal (Split) (1000 g)<br><br>
+				₹230&emsp;<strike>₹599</strike><br>60%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pdal3.jpeg" width="300px"height="300px"/></td>
+				<td><h3>Trinetra Green Moong Dal (Whole) (500 g)<br><br>
+				₹175&emsp;<strike>₹400</strike><br>56%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pdal4.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Trinetra Brown Chana (Whole)  (2000 g))<br><br>
+				₹400&emsp;<strike>₹899</strike><br>55%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="pdal5.jpeg"width="250px"height="300px" class="img1"/></td>
+				<td><h3>Trinetra Green Moong Dal (Split) (1000 g)<br><br>
+				₹285&emsp;<strike>₹600</strike><br>52%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="pdal6.jpeg"width="250px"height="300px" class="img1"/></td>
+				<td><h3>Trinetra Rajma (Whole) (1000 g)<br><br>
+				₹245&emsp;<strike>₹650</strike><br>58%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+<div class="column oil">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr><td><img src="goil1.jpeg"width="300px"height="300px" /></td>
+				<td><h3>Saffola Gold Pro Healthy Lifestyle Blended Oil Can (2L)<br><br>
+				₹418&emsp;<strike>₹495</strike><br>28%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="goil5.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Gemini Refined Sunflower Oil Can (5L)<br><br>
+				₹640&emsp;<strike>₹700</strike><br>6%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="goil2.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Parachute Coconut Oil Can (1L)<br><br>
+				₹365&emsp;<strike>₹415</strike><br>12%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button></h3>
+			</div>
+			</td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="goil3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Bertolli Mild Taste Olive Oil Plastic Bottle (1L)<br><br>
+			₹850&emsp;<strike>₹1,220</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="goil4.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Fortune Refined Soyabean Oil Can (5L)<br><br>
+				₹1,500&emsp;<strike>₹2,800</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="goil6.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Dhara Kachi Ghani Mustard Oil Mustard Oil Can (5L)<br><br>
+				₹1,000&emsp;<strike>₹2,990</strike><br>35%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+
+<div class="column dryf">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dfruit7.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Happilo 100% Natural Premium Whole Cashews  (200 g)<br><br>
+				₹240&emsp;<strike>₹335</strike><br>38%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dfruit8.jpeg"width="300px"height="300px"/></td>
+				<td><h3>Happilo 100% Natural California Almonds (500 g )<br><br>
+				₹470&emsp;<strike>₹625</strike><br>25%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dfruit1.jpg" width="300px"height="300px"/></td>
+				<td><h3>Happilo Californian Roasted & Salted Pistachios, 200g<br><br>
+				₹300&emsp;<strike>₹600</strike><br>20%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dfruit6.jpg"width="300px"height="300px"/></td>
+				<td><h3>Happilo Premium Dried Turkish Apricots (200g)<br><br>
+				₹200&emsp;<strike>₹300</strike><br>35%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="dfruit3.jpg"width="250px"height="300px"/></td>
+				<td><h3>Happilo Premium Inshell Walnut Pack Pouch,500 g<br><br>
+				₹400&emsp;<strike>₹690</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="dfruit5.jpg"width="250px"height="300px"/></td>
+				<td><h3>Happilo Omani Dates Value Pack Pouch, 680 g<br><br>
+				₹300&emsp;<strike>₹450</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+
+<div class="column dairy">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="milk.jpg"width="300px"height="300px" id="i2"/></td>
+				<td><h3>Amul Taaza Homogenised Toned Milk<br><br>
+				₹20&emsp;<strike>₹50</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="bmilk.jpeg"width="300px"height="300px"id="i2"/></td>
+				<td><h3>Amul Masti Spiced Buttermilk (1L)<br><br>
+				₹50&emsp;<strike>₹80</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="butter.jpg" width="300px"height="300px"/></td>
+				<td><h3>Amul Pasteurised Salted Butter (100g)<br><br>
+				₹45&emsp;<strike>₹60</strike><br>25%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dcream.jpeg"width="300px"height="300px"id="i2"/></td>
+				<td><h3>Amul Fresh Pure Cream (250ml, Pack of 1)<br><br>
+				₹990&emsp;<strike>₹1,090</strike><br>15%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dpaneer.jpg"width="300px"height="300px" id="img1"/></td>
+				<td><h3>Amul Paneer - Malai, 200g Pack<br><br>
+				₹80&emsp;<strike>₹120</strike><br>4%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+<div class="column furnishing">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="curtain.jpg"width="300px"height="300px"/></td>
+				<td><h3>Galaxy Home Decor Polyester Floral Door Curtain, 7 Feet, Pink, 3 Piece<br><br>
+				₹500&emsp;<strike>₹700</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="carpet4.jpg"width="300px"height="300px"/></td>
+				<td><h3>Multi Collection High Density Carpets Rugs 2 Inch for Room Decor<br><br>
+				₹1,000&emsp;<strike>₹1,400</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pcover3.jpg" width="300px"height="300px"/></td>
+				<td><h3>Sunflower Smiley Face Cushion Size-16X16 Inch Colour-Multi DGN<br><br>
+				₹1,600&emsp;<strike>₹1,990</strike><br>38%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pcover.jpg"width="300px"height="300px"/></td>
+				<td><h3>Interio Cotton 200TC Cushion Cover, Standard, Yellow , Set of 5<br><br>
+				₹300&emsp;<strike>₹690</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dmat3.jpg"width="300px"height="300px"/></td>
+				<td><h3>Door Mat Onlymat Floral Rug (Black and Beige, Coir, 120 x 40 cm)<br><br>
+				₹790&emsp;<strike>₹1,090</strike><br>35%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dmat2.jfif"width="300px"height="300px"/></td>
+				<td><h3>Door Mat Velvet Abstract Door Curtains, 7 Feet, Scarlet Red, Set of 2<br><br>
+				₹230&emsp;<strike>₹590</strike><br>55%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+ </div>
+</div>
+<script>
+		function cartAlert(){
+			alert("Success! Product added to cart successfully...");
+		}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>

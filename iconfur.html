@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+	<link rel="stylesheet" type="text/css" href="product.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
+<style>
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+</style>
+</head>
+<body>
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+  <center><h1 style="color:white">Furniture</h1>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<a href="login.html" class="navbar-brand">Login</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+				  <a href="#"id="a">Top Offers</a>
+				  <a href="#"id="a">Electronics</a>
+				  <a href="icongrocery.html"id="a">Grocery</a>
+				  <a href="iconfashion.html"id="a">Fashion</a>
+				  <a href="#"id="a">Mobile</a>
+				  <a href="iconlaptop.html"id="a">Laptop</a>
+				  <a href="iconhomeapp.html"id="a">Home Appliances</a>
+            </div>
+        </div>
+    </nav>
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+	<div class="carousel-item active">
+      <img src="furad2.jpg" width="100%" height="500"class="img">
+    </div>
+    <div class="carousel-item ">
+      <img src="furad.jpg" width="100%" height="500"class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="furad3.jpg" width="100%" height="500"class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="ad1.jfif" width="100%" height="500"class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="furad4.jpg" width="100%" height="500"class="img">
+    </div>
+	  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+
+<div class="main">
+<hr/>
+<div id="myBtnContainer">
+  <button class="btn1 active" onclick="filterSelection('all')"><h4 class="responsive-font-example"> Show all</h4></button>
+  <button class="btn1" onclick="filterSelection('lroom')"> <h4 class="responsive-font-example">Living Room Furniture</h4></button>
+  <button class="btn1" onclick="filterSelection('bedroom')"> <h4 class="responsive-font-example">Bedroom Furniture</h4></button>
+  <button class="btn1" onclick="filterSelection('decor')"> <h4 class="responsive-font-example">Decor Furniture</h4></button>
+  <button class="btn1" onclick="filterSelection('furnishing')"> <h4 class="responsive-font-example">Furnishings</h4></button>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+<div class="column lroom">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr><td><img src="sofa.jpg"width="300px"height="300px" /></td>
+				<td><h3>Best furniture Italian Design Luxury Living Room Sofas Sets Leather Sofa Home Furniture<br><br>
+				₹20,000&emsp;<strike>₹22,900</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="sofa2.jpg"width="300px"height="300px"/></td>
+				<td><h3>Mamta Decoration Solid Sheesham Wood Wooden Sofa Set Furniture | for Living Room and Office Walnut Brown<br><br>
+				₹32,000&emsp;<strike>₹36,000</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button></h3>
+			</div>
+			</td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="Lsofa.jpg"width="300px"height="300px"/></td>
+			<td><h3>White Sectional L Shape sofa With Led Lights inside White Sectional Sofa And brown Accent Chairs<br><br>
+			₹22,000&emsp;<strike>₹25,000</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="Lsofa3.jpg"width="300px"height="300px"/></td>
+				<td><h3>Wood Sofa Set for Living Room | Wooden Sofa Set (L Shape Sofa Set, Walnut Finish)<br><br>
+				₹45,000&emsp;<strike>₹48,000</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="tv5.jpg"width="300px"height="300px"/></td>
+				<td><h3>Friza is main highlight L.C.D. Unit, T.V.Cabinet for Living Room Furniture.Size:66 Length<br><br>
+				₹18,990&emsp;<strike>₹20,990</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="sidefur.jpg"width="300px"height="300px"/></td>
+				<td><h3>Modern sideboard in bright living room.Interior design: Wooden, white sideboard in modern loft<br><br>
+				₹8,000&emsp;<strike>₹9,990</strike><br>35%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="slide7.jpg"width="300px"height="300px"/></td>
+				<td><h3>Modern Design Comfortable Relaxing Armchair Lounge Accent Single Seat Sofa Chair for Living Room<br><br>
+				₹30,990&emsp;<strike>₹32,850</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+
+<div class="column bedroom">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="bed2.jpg"width="300px"height="300px"/></td>
+				<td><h3>HomeTown Bolton Engineered Wood Box Storage King Size Bed in Walnut Colour<br><br>
+				₹18,000&emsp;<strike>₹19,900</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="bed.jpg"width="300px"height="300px"/></td>
+				<td><h3>Solid Wood Palang Double Bed Wooden Living Room Furniture (Natural Finish)<br><br>
+				₹38,000&emsp;<strike>₹42,000</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="cupboard.jfif" width="300px"height="300px"/></td>
+				<td><h3>Mirror Wooden Wardrobe with 4 doors. Wenge finish with 7 shelves & 3 drawers.Available in multiple colours<br><br>
+				₹35,000&emsp;<strike>₹36,990</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="cupb2.jpg"width="300px"height="300px"/></td>
+				<td><h3>Aart Store Printed Engineered Wood Particle Board Wenge Finish 3 Door Wardrobe<br><br>
+				₹25,000&emsp;<strike>₹28,000</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="bedtable.jpg"width="250px"height="300px"/></td>
+				<td><h3>Wood Bed Side Table/Cabinet Shelves for Living Room Bedroom Office (Matte Finish)(Wenge)<br><br>
+				₹2,000&emsp;<strike>₹2,990</strike><br>25%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		 <table class="table table-borderless">
+			<tr>
+				<td><img src="btable.jpg"width="250px"height="300px"/></td>
+				<td><h3>DriftingWood Sheesham Wood 3 Drawer Bed Side Table for Bedroom Living Room (White)<br><br>
+				₹3,990&emsp;<strike>₹4,590</strike><br>35%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+
+<div class="column decor">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dlight3.jpg"width="300px"height="300px"/></td>
+				<td><h3>Glass Tealight Candle Holders- Diwali Candle Holder, Tealight Candle Holders, Parties and Home Decor<br><br>
+				₹700&emsp;<strike>₹900</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="shelf.jpg"width="300px"height="300px"/></td>
+				<td><h3>Wooden Decorative Floating Wall Shelf/Display Unit for Living Room Decor<br><br>
+				₹1,800&emsp;<strike>₹2,000</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="shelf3.jpg" width="300px"height="300px"/></td>
+				<td><h3>U Shap Wall Shelf for Living Room Book Home/Book Decor Wooden Extra Large Set of 3<br><br>
+				₹800&emsp;<strike>₹990</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="slamp.jpg"width="300px"height="300px"/></td>
+				<td><h3>Rechargeable LED Touch On/Off Switch Desk Light Eye Protection Dimmer Rechargeable Led Study Table Lamps USB Charging Touch<br><br>
+				₹990&emsp;<strike>₹1,090</strike><br>15%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="wallhang2.jpg"width="300px"height="300px"/></td>
+				<td><h3>'Flapping Birds' Handmade & Hand-Painted Decorative Wall Hanging<br><br>
+				₹1,100&emsp;<strike>₹1,500</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+<div class="column furnishing">
+  <div class="container">          
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="curtain.jpg"width="300px"height="300px"/></td>
+				<td><h3>Galaxy Home Decor Polyester Floral Door Curtain, 7 Feet, Pink, 3 Piece<br><br>
+				₹500&emsp;<strike>₹700</strike><br>30%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="carpet4.jpg"width="300px"height="300px"/></td>
+				<td><h3>Multi Collection High Density Carpets Rugs 2 Inch for Room Decor<br><br>
+				₹1,000&emsp;<strike>₹1,400</strike><br>40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pcover3.jpg" width="300px"height="300px"/></td>
+				<td><h3>Sunflower Smiley Face Cushion Size-16X16 Inch Colour-Multi DGN<br><br>
+				₹1,600&emsp;<strike>₹1,990</strike><br>38%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="pcover.jpg"width="300px"height="300px"/></td>
+				<td><h3>Interio Cotton 200TC Cushion Cover, Standard, Yellow , Set of 5<br><br>
+				₹300&emsp;<strike>₹690</strike><br>45%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dmat3.jpg"width="300px"height="300px"/></td>
+				<td><h3>Door Mat Onlymat Floral Rug (Black and Beige, Coir, 120 x 40 cm)<br><br>
+				₹790&emsp;<strike>₹1,090</strike><br>35%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+			<tr>
+				<td><img src="dmat2.jfif"width="300px"height="300px"/></td>
+				<td><h3>Door Mat Velvet Abstract Door Curtains, 7 Feet, Scarlet Red, Set of 2<br><br>
+				₹230&emsp;<strike>₹590</strike><br>55%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+</div>
+</div>
+
+ </div>
+</div>
+<script>
+		function cartAlert(){
+			alert("Success! Product added to cart successfully...");
+		}
+</script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>

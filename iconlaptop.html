@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="product.css" />
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
+<style>
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+</style>
+</head>
+<body>
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+  <center><h1 style="color:white">Laptop</h1>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<a href="login.html" class="navbar-brand">Login</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+				  <a href="#"id="a">Top Offers</a>
+				  <a href="#"id="a">Electronics</a>
+				  <a href="iconfur.html"id="a">Furniture</a>
+				  <a href="iconfashion.html"id="a">Fashion</a>
+				  <a href="#"id="a">Mobile</a>
+				  <a href="icongrocery.html"id="a">Grocery</a>
+				  <a href="iconhomeapp.html"id="a">Home Appliances</a>
+            </div>
+        </div>
+    </nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="lapad6.jpg" width="100%" height="500" class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="lapad3.jpg" width="100%" height="500"class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="lapad2.jpg" width="100%" height="500"class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="lapad1.jpg" width="100%" height="500"class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="lapad4.jpg" width="100%" height="500"class="img">
+    </div>
+	  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+<div class="main"><br><br><hr/>
+<div id="myBtnContainer">
+  <button class="btn1 active" onclick="filterSelection('all')"><h4 class="responsive-font-example"> Show all</h4></button>
+  <button class="btn1" onclick="filterSelection('hp')"><h4 class="responsive-font-example"> HP</h4></button>
+  <button class="btn1" onclick="filterSelection('dell')"> <h4 class="responsive-font-example"> DELL</h4></button>
+  <button class="btn1" onclick="filterSelection('asus')"> <h4 class="responsive-font-example"> ASUS</h4></button>
+  <button class="btn1" onclick="filterSelection('lenovo')"> <h4 class="responsive-font-example"> LENOVO</h4></button>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column hp">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr><td><img src="HPlapi1.jpeg"width="300px"height="300px" /></td>
+			<td><h3>HP Chromebook MT8183 - (4 GB/64 GB EMMC Storage/Chrome OS) 11A-NA0002MU Chromebook  (11.6 inch, Indigo Blue, 1.07 kg)
+			<br><br>₹21,990<br><strike>₹24,990</strike>    11% off <br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		<table class="table table-borderless">
+		<tr>
+			<td><img src="HPlapi2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>HP 15s Athlon Dual Core - (4 GB/1 TB HDD/Windows 10 Home) 15s-GY0001AU Thin and Light Laptop  (15.6 inch, Jet Black, 1.76 kg, With MS Office)
+			<br>₹27,990<br><strike>₹28,420</strike>    1% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button></h3>
+			</div>
+			</td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="lp4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>HP 15s Core i3 11th Gen - (8 GB/1 TB HDD/Windows 10 Home) 15s-du3038TU Thin and Light Laptop (15.6 inch, Natural Silver, 1.77 kg, With MS Office)
+			<br><br>₹42,490<br><strike>₹46,805</strike>    9% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="lp5.jpeg"width="300px"height="300px"/></td>
+			<td><h3>HP 15s Ryzen 3 Dual Core 3250U - (4 GB/1 TB HDD/Windows 10 Home) 15s-GR0006AU Thin and Light Laptop  (15.6 inch, Jet Black, 1.76 kg, With MS Office)
+			<br><br>₹31,990<br><strike>₹34,480</strike>  7%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+
+<div class="column dell">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr><td><img src="dell1.jpeg"width="300px"height="300px"/></td>
+			<td><h3>DELL Vostro Core i3 10th Gen - (4 GB/256 GB SSD/Windows 10 Home) Vostro 3401 Thin and Light Laptop  (14 inch, Accent Black, 1.58 kg, With MS Office)
+			<br><br>₹34,990<br><strike>₹36,057</strike>    2% off <br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		<tr>
+			<td><img src="dell2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>DELL Inspiron 3501 Core i5 11th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home) Inspiron 3501 Laptop  (15.6 inch, Black, 1.83 kg, With MS Office)
+			<br><br>₹57,150<br><strike>₹63,203</strike>    9% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button></h3>
+			</div>
+			</td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="dell3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>DELL Inspiron Core i3 6th Gen - (4 GB/1 TB HDD/Linux) 3467 Laptop  (14 inch, Black, 1.956 kg)
+			<br><br>₹28,543<br><strike>₹29,676</strike>    3% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="dell4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>DELL G5 15 SE Ryzen 7 Octa Core 4800H - (8 GB/512 GB SSD/Windows 10 Home/6 GB Graphics/AMD Radeon RX 5600M) G5 5505 Gaming Laptop  (15.6 inch, Silver, 2.5 kg)
+			<br><br>₹86,990<br><strike>₹94,606</strike>  8%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+
+<div class="column asus">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr><td><img src="asus1.jpeg"width="300px"height="300px"/></td>
+			<td><h3>ASUS Pentium Quad Core - (4 GB/1 TB HDD/Windows 10 Home) X543MA-GQ1020T Laptop  (15.6 inch, Transparent Silver, 1.9 kg)
+			<br><br>₹26,990<br><strike>₹31,990</strike>    15% off <br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		<tr>
+			<td><img src="asus2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>ASUS Chromebooks Celeron Dual Core - (4 GB/32 GB EMMC Storage/Chrome OS) C223NA-GJ0074 Thin and Light Laptop  (11.6 inch, Grey, 1 Kg)
+			<br><br>₹17,999<br><strike>₹21,990</strike>    18% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button></h3>
+			</div>
+			</td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="asus3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>ASUS ROG Strix G15 (2020) Octa Core i7 10th Gen - (16 GB/1 TB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650 Ti/144 Hz) G512LI-HN305T Gaming Laptop  (15.6 inch, Black Plastic, 2.30 Kg)
+			<br><br>₹84,990<br><strike>₹1,16,990</strike>    27% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="asus4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>ASUS VivoBook 15 Core i3 10th Gen - (4 GB/1 TB HDD/Windows 10 Home) X515JA-BR381T Thin and Light Laptop  (15.6 inch, Slate Grey, 1.80 kg)
+			<br><br>₹33,990<br><strike>₹36,030</strike>  5%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+
+<div class="column lenovo">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr><td><img src="lenovo1.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Lenovo V15 Athlon Dual Core 3050U - (4 GB/1 TB HDD/DOS) V15 Laptop  (15.6 inch, Iron Grey, 1.85 kg)
+			<br><br>₹23,990<br><strike>₹30,000</strike>    20% off <br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		<tr>
+			<td><img src="lenovo2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Lenovo Ideapad Gaming 3 Ryzen 5 Hexa Core 4600H - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/120 Hz) 15ARH05 Gaming Laptop  (15.6 inch, Onyx Black, 2.2 kg)
+			<br><br>₹61,990<br><strike>₹86,690</strike>    28% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button></h3>
+			</div>
+			</td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="lenovo3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Lenovo V Series Athlon Dual Core 3050U - (4 GB/1 TB HDD/Windows 10 Home) V-15 ADA Laptop  (15.6 Inch, Iron Grey, 1.85 KG)
+			<br><br>₹27,990<br><strike>₹33,000</strike>    15% off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="lenovo4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Lenovo IdeaPad Gaming 3i Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650 Ti/60 Hz) 15IMH05 Gaming Laptop  (15.6 inch, Onyx Black, 2.2 kg)
+			<br><br>₹65,990<br><strike>₹1,09,990</strike>  40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script>
+		function cartAlert(){
+			alert("Success! Product added to cart successfully...");
+		}
+</script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
