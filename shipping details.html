@@ -91,7 +91,7 @@ span.price {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   .row {
     flex-direction: auto;
   }
@@ -99,11 +99,14 @@ span.price {
 </style>
 </head>
 <body>
+
+
 <center><h1><b>Shipping and Payment details</b></h1></center><hr/>
 <div class="row">
   <div class="col-75">
     <div class="container">
       <form action="/action_page.php">
+      
         <div class="row">
           <div class="col-50">
             <h3>Shipping Details</h3>
