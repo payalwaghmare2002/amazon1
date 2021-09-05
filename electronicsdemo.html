@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Electronics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="product.css" />
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.column {
+  float: left;
+  width: 100%;
+  display: none; /* Hide all elements by default */
+}
+
+@media (min-width: 1200px) {
+  
+.img{
+	width:100%;
+	height:500px;
+}
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  
+.img{
+	width:100%;
+	height:200px;
+}
+}
+</style>
+</head>
+<body>
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+  <center><h1 style="color:white">Electronics</h1>
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<a href="login.html" class="navbar-brand">Login</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+				  <a href="Top offers.html"id="a">Top Offers</a>
+				  <a href="iconfashion.html"id="a">Fashion</a>
+				  <a href="iconfur.html"id="a">Furniture</a>
+				  <a href="icongrocery.html"id="a">Grocery</a>
+				  <a href="#"id="a">Mobile</a>
+				  <a href="iconlaptop.html"id="a">Laptop</a>
+				  <a href="iconhomeapp.html"id="a">Home Appliances</a>
+            </div>
+        </div>
+    </nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+	<li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="cam add.jpg" width="100%" height="500" class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="cam add2.jpg" width="100%" height="500" class="img">
+    </div>
+    <div class="carousel-item">
+      <img src="cam add3.jpg" width="100%" height="600" class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="headphnad1.jpg" width="100%" height="500" class="img">
+    </div>
+	<div class="carousel-item">
+      <img src="headphnad2.jpg" width="100%" height="500" class="img">
+    </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+<hr/>
+<div class="main">
+<div id="myBtnContainer">
+  <button class="btn1 active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn1" onclick="filterSelection('headphones')"> Headphones</button>
+  <button class="btn1" onclick="filterSelection('camera')"> Camera</button>
+  <button class="btn1" onclick="filterSelection('powerbank')"> Powerbank</button>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column headphones">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<td>
+			<img src="hp1.jpeg"width="300px"height="300px"/></td>
+			<td><h3>SONY WH-CH510 Google Assistant enabled Bluetooth Headset<br>  (Blue, On the Ear)<br><br>₹2,990<br><strike>₹4,990</strike>&nbsp; 40%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		<table class="table table-borderless">
+		<tr>
+			<td><img src="hp2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>OnePlus Bullets Wireless Z Bass Edition Bluetooth Headset<br>  (Reverb Red, In the Ear)<br><br>₹1,999<br><strike>₹4,990</strike>&nbsp; 40%off <br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="hp3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>JBL C150SI Wired Headset ,Google Assistant enabled (Black,<br> In the Ear)<br><br>₹669<br><strike>₹1,399</strike>&nbsp; 52%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked"></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="hp4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>boAt Airdopes 381 with ASAP charge Bluetooth Headset  (Blue,<br> True Wireless)<br><br>₹1,899<br><strike>₹4,990</strike>&nbsp; 61%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="hp5.jpeg"width="300px"height="300px"/></td>
+			<td><h3>OPPO Enco Q1 Active noise cancellation enabled Bluetooth<br>Headset  (Midnight Black, In the Ear)<br><br>₹5,990<br><strike>₹7,990</strike>     25%off<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+
+<div class="column camera">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr>
+			<td><img src="camera1.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Sony CyberShot DSC-H300 Point & Shoot Camera Color:<br> black<br><br>&#8377; 14,999<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		<tr>
+			<td><td><img src="camera2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Canon PowerShot  (20.3 MP 50x Zoom Digital Zoom,Black)<br><br>&#8377; 22,899<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="camera3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>NIKON DSLR Camera D7500, Body with 18-140 mm Lens<br>(Black)<br><br>&#8377; 85,994<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="camera4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Canon EOS Camera 3000D DSLR,1 Camera Body 18-55 mm<br> Lens(Black)<br><br>₹27,617<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="camera5.jpeg"width="300px"height="300px"/></td>
+			<td><h3>NIKON digital camera Compact (16.1 MP,4x Digital Zoom,Purple)<br><br>₹4,985<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+
+<div class="column powerbank">
+  <div class="container">   
+		 <table class="table table-borderless">
+			<tr>
+			<td><img src="pb1.jpeg"width="300px"height="300px"/></td>
+			<td><h3>SAMSUNG 10000 mAh Power Bank<br><br>₹ 1,500<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+			</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		<tr>
+			<td><img src="pb2.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Samsung Powerbank 10000mAh with<br> USB-C,25W & wireless charging<br><br>₹ 4,000<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p></h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div>
+			</td>
+		</tr>
+		</table>
+		
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="pb3.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Black Samsung PowerBank 5200mAh with<br> single USB port<br><br>₹ 2,000<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star ">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		 </tr>
+		 </table>
+		 <table class="table table-borderless">
+		 <tr>
+			<td><img src="pb4.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Lenovo 10400 mAh Power Bank<br><br>₹ 1,000<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+		<table class="table table-borderless">
+		 <tr>
+			<td><img src="pb5.jpeg"width="300px"height="300px"/></td>
+			<td><h3>Lenovo 1000mAh Power Bank<br><br>₹300<br><br>
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star checked">
+					<p class="fa fa-star "></p> </h3>
+			<div class="clearfix">
+			<a href="shipping details.html"><button type="button" class="btn btn-warning">Buy Now</button></a>
+			<button type="button" class="btn btn-warning" onclick="cartAlert()">Add to Cart</button>
+			</div></td>
+		</tr>
+		</table>
+	</tbody>
+    </thead>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script>
+		function cartAlert(){
+			alert("Success! Product added to cart successfully...");
+		}
+</script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
