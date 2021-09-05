@@ -1,0 +1,272 @@
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+li a{
+  display: block;
+  color:white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.dropdown-menu
+{
+width:100%;
+background-color:black;
+}
+
+.dropdown-item
+{
+width:350px;
+padding:14px;
+background-color:black;
+color:white;
+}
+li a:hover{
+  background-color:grey;
+  color: white;
+}
+#id1
+{
+display:inline-block;
+padding:8px;
+margin-left:20px;
+}
+#id2
+{
+background-color:black;
+}
+.dropdown-menu
+{
+margin-left:0px;
+}
+#r1
+{
+background-color:black;
+padding:50px;
+}
+#tsnse1
+{
+border:2px solid black;
+display:inline-block;
+width:auto;
+margin-left:20px;
+margin-top:450px;
+margin-bottom:120px;
+padding:20px;
+}
+a
+{
+color:white;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+#b4
+{
+color:white;
+font-size:20px;
+}
+#b1
+{
+font-size:20px;
+}
+#tsnse1
+{
+border:2px solid black;
+display:inline-block;
+width:auto;
+margin-left:20px;
+margin-top:280px;
+margin-bottom:120px;
+padding:20px;
+}
+.container
+{
+margin-left:0px;
+}
+a
+{
+margin:20px;
+}
+
+#news1
+{
+background-image: url("amazon2.jfif");
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+body {
+font-family: calibri;
+margin: 0;
+display: grid;
+font-size: 24px;
+}
+h2 {
+font-weight: 400;
+font-size: 15px;
+}
+.box a {
+color: #999;
+}
+.body{
+	font-size:20px;
+}
+footer{
+	background-color:black;
+	color: white;
+	font-size:15px
+}
+#logo1
+{
+	margin-left:120px;
+	margin-top:0px;
+}
+.s2{
+	margin-left:220;
+}		
+@media (min-width: 1200px) {
+ #tsnse1
+{
+border:2px solid black;
+display:inline-block;
+width:auto;
+margin-left:20px;
+margin-top:450px;
+margin-bottom:120px;
+padding:20px;
+}
+.space{
+	margin-left:180;
+}
+.img{
+	width:150;
+	height:150;
+}
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+ #tsnse1
+{
+border:2px solid black;
+display:inline-block;
+width:300px;
+height:450px;
+margin-left:20px;
+margin-top:150px;
+margin-bottom:120px;
+padding:0px;
+}
+
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+ #div1
+{
+display:inline-block;
+width:300px;
+height:250px;
+margin-left:20px;
+margin-top:30px;
+margin-bottom:120px;
+padding:0px;
+}
+#div2
+{
+display:inline-block;
+width:300px;
+height:250px;
+margin-left:20px;
+margin-top:8px;
+margin-bottom:120px;
+padding:0px;
+}
+.space{
+	margin-left:10;
+}
+.column {
+  float: left;
+  width: 20%;
+}
+.img {
+  width: 20px;
+  height:20px;
+}
+}
+@media (min-width: 1200px) {
+.column {
+  float: left;
+  width: 12%;
+}
+.img{
+	height:100px;
+	width:150px;
+}
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 1199.98px) {
+  body::before {
+    content: 'Best on wider screens.';
+    display: block;
+    margin: 1em;
+    font-weight: bold;
+    color: #444;
+  }
+}
