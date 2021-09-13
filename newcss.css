@@ -13,14 +13,14 @@
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 5%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 18px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
@@ -73,12 +73,12 @@ li a:hover{
 #id1
 {
 display:inline-block;
-padding:8px;
-margin-left:20px;
+padding:4px;
+margin-left:10px;
 }
 #id2
 {
-background-color:black;
+background-color:#212930;
 }
 .dropdown-menu
 {
@@ -102,7 +102,7 @@ padding:20px;
 a
 {
 color:white;
-}
+}/*
 .sidenav {
   height: 100%;
   width: 160px;
@@ -113,7 +113,7 @@ color:white;
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
-}
+}*/
 #b4
 {
 color:white;

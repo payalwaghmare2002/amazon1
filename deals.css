@@ -8,7 +8,6 @@ body {
     font-size: 20px;
   }
 }
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
 @media (max-width: 1199.98px) {
   .responsive-font-example {
     font-size: 9px;
@@ -86,10 +85,73 @@ h1 {
   height: 200px;
 }
 /* Content */
-.content {
+@media (min-width: 1200px) {
+.card {
+  width: 200%;
+  border:2px solid #c5c6d0;
+  border-radius:10px;
+}
+ .responsive-font-example {
+    font-size: 20px;
+  }
+#newfont{
+	width: 250px;
+    height: 40px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199.98px) {
+  #newfont{
+	width: 240px;
+    height: 35px;
+    padding: 3px 0px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .card {
+  width: 100%;
+  height:350px;
+  border:2px solid #c5c6d0;
+  border-radius:10px;
+}
+ .responsive-font-example {
+    font-size: 8px;
+  }
+}
+#a{
+	color:white;
+	text-decoration:none;
+}
+@media (min-width: 1200px) {
+  .h1 {
+    font-size: 20px;
+	align:center;
+  }
+  .content {
   background-color: #e4e6eb;
   color:black;
   padding: 10px;
+  width:240px;
+  height:400px;
+  margin-left:25px;
+}
+}
+@media (max-width: 770.98px) {
+  .h1 {
+    font-size: 15px;
+	align:center;
+  }
+  .content {
+  background-color: #e4e6eb;
+  color:black;
+  padding: 10px;
+  width:75px;
+  height:350px;
+}
 }
 
 /* The "show" class is added to the filtered elements */
@@ -104,6 +166,7 @@ h1 {
   padding: 6px 8px;
   background-color: #ccc;
   cursor: pointer;
+  color:white;
 }
 
 .btn1:hover {
@@ -125,12 +188,12 @@ h1 {
     font-size: 10px;
     text-align: center;
 }
-
+/*
 .card {
   width: 180%;
   border:2px solid #c5c6d0;
   border-radius:10px;
-}
+}*/
 hr
 {
 	height:1px;

@@ -4,27 +4,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="deals.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
 <style>
-
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <a class="nav-link" href="index.html" color="white"><font face="cambrila" size="5px" color="white">Home</font></a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">&emsp;
+				<a href="login.html"id="a">Login</a>&emsp;
+				<a href="sign in.html"id="a">Sign in</a>&emsp;
+				<a href="aboutpage.html"id="a"> About us</a>&emsp;
+				<a href="contact8.html"id="a"onclick="myFunction()">Contact us</a>&emsp;
+				<a href="ProdSlideshow.html"id="a">Gallery</a>&emsp;
+            </div>
+        </div>
 </nav><br><br>
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-	  <img border="2" src="offer2.jpeg" width="350" height="350">
+	  <img border="2" src="offer2.jpeg" width="298" height="350">
     </div>
     <div class="col-sm-6">
-	  <p><font size="8px">Volga Walking Shoes For Men (Black)<br>₹1,835 <strike><font size="5px">₹3,599</font></strike></font><h4 style="color:navy;">Get Latest Price</h4>
+	  <p><font size="8px">Volga Walking Shoes For Men (Black)<br> &#8377;1,835 <strike><font size="5px"> &#8377;3,599</font></strike></font><h4 style="color:navy;">Get Latest Price</h4>
 	  <p class="fa fa-star checked">
 <p class="fa fa-star checked">
 <p class="fa fa-star checked">
@@ -50,7 +62,7 @@
     </div> 
     <div class="col-sm-2">
 		<div class="card"><br><br>
-			<center><b><h3>Price : &#8377; 1,835.00 </b></h3>
+			<center><div class="h1"><b>Price : &#8377; 1,835.00 </div></b>
 			<p style="font-size:20px"><label>Quantity : &emsp;</label>
 			<select>
 				<option> 1 </option>
@@ -59,13 +71,13 @@
 				<option> 4 </option>
 				<option> 5 </option>
 			</select></p><br><br>
-			<a href="shipping details.html"><button type="button" class="btn btn-warning btn-circle btn-sm" ><font size="3px" color="navy">Buy Now</font></button><br><br></a>
-			<button class="btn btn-success btn-circle btn-sm" onclick="cartAlert()"><font color="white"><font size="3px" color="navy">Add to cart &#128722;</font></a></button><br><br> 
-			<button class="btn btn-secondary btn-circle btn-sm" onclick="wishlistAlert()"><font color="white"><font size="3px" color="white">Add to wishlist &#10084;</font></a></button><br><br> <br><br> 
+			<a href="shipping details.html"><button type="button" class="btn btn-warning btn-circle btn-sm" id="newfont"><font color="navy">Buy Now</font></button><br><br></a>
+			<button class="btn btn-success btn-circle btn-sm" onclick="cartAlert()" id="newfont"><font color="navy">Add to cart &#128722;</font></a></button><br><br> 
+			<button class="btn btn-secondary btn-circle btn-sm" onclick="wishlistAlert()"id="newfont"><font color="white">Add to wishlist &#10084;</font></a></button><br><br> <br><br> 
 			</center>
 		</div>
-</div>
-
+	</div>
+	</div>
 <div class="main">
 <hr/>
 <h1><b>R<font size="5px" face="cambrila">elated Products</font></b></h1>
@@ -79,7 +91,7 @@
 <div class="row">   	
 	<div class="column men1">
 		<div class="content">
-			<img src="shoes2.jpg" height="200px" width="100%" class="responsive">
+			<img src="shoes2.jpg" height="200px" width="100%" >
 		    <h4 class="responsive-font-example">Lunarconverge 2 Running Nike Shoes For Men <br><br>
 			<p><b>&#8377; 2,000.00 </b>
 			<p class="fa fa-star checked">
@@ -92,7 +104,7 @@
 	</div>
 	<div class="column men1">
 		<div class="content">
-			<img src="shoes1.jpg" height="200px" width="100%" class="responsive">
+			<img src="shoes1.jpg" height="200px" width="100%" >
 		    <h4 class="responsive-font-example">BRUTON Pack of 2 Canvas Casual Loafers and Sneakers Shoes<br><br>
 		      <p><b>&#8377; 400.00</b>
 			  <p class="fa fa-star checked">
@@ -104,7 +116,7 @@
 	</div>		
 	<div class="column men1">
 		<div class="content">
-			<img src="shoes3.jpg" height="200px" width="100%" class="responsive">
+			<img src="shoes3.jpg" height="200px" width="100%" >
 			<h4 class="responsive-font-example">Remo Formal Derby Shoes Slip On For Men (Black)<br><br>
 			  <p><b>&#8377; 800.00</b>
 		 	  <p class="fa fa-star checked">
@@ -114,11 +126,9 @@
 			  <p class="fa fa-star "></p></p></h4>
 		</div>
 	</div>
-				
-  
   <div class="column women">
     <div class="content">
-      <img src="shoes4.jpeg" height="200px" width="100%" class="responsive">
+      <img src="shoes4.jpeg" height="200px" width="100%" >
       <h4 class="responsive-font-example">Canvas casual Partywear Stylish High Heels Sneakers Shoes For Womens<br><br>
       <p><b>&#8377; 500.00</b>
 	  <p class="fa fa-star checked">
@@ -130,7 +140,7 @@
   </div>
   <div class="column women">
     <div class="content">
-    <img src="shoes5.jpg" height="200px" width="100%" class="responsive">
+    <img src="shoes5.jpg" height="200px" width="100%" >
       <h4 class="responsive-font-example">D & DO Formal Bellies/Flats Jutti for Girls & Women<br><br>
       <p><b>&#8377; 350.00</b>
 	  <p class="fa fa-star checked">
@@ -142,7 +152,7 @@
   </div>
   <div class="column women">
     <div class="content">
-    <img src="shoes6.jpeg" height="200px" width="100%" class="responsive">
+    <img src="shoes6.jpeg" height="200px" width="100%" >
       <h4 class="responsive-font-example">High Heel Comfortable Women Casual Boots Out Door Ankle Length Shoe<br><br>
       <p><b>&#8377; 500.00</b>
 	  <p class="fa fa-star checked">
@@ -155,7 +165,7 @@
 
   <div class="column kids">
     <div class="content">
-      <img src="shoes7.jpg" height="200px" width="100%" class="responsive">
+      <img src="shoes7.jpg" height="200px" width="100%" >
       <h4 class="responsive-font-example">Lighting shoes with LED lights for Kids<br><br>
       <p><b>&#8377; 460.00</b>
 	  <p class="fa fa-star checked">
@@ -168,7 +178,7 @@
   </div>
   <div class="column kids">
     <div class="content">
-    <img src="shoes8.jfif" height="200px" width="100%" class="responsive">
+    <img src="shoes8.jfif" height="200px" width="100%" >
       <h4 class="responsive-font-example">Anchor Boys Shoes Toddler Shoes Soft Sole Climb Shoes<br><br>
       <p><b>&#8377; 800.00</b>
 	  <p class="fa fa-star checked">
@@ -180,7 +190,7 @@
   </div>
   <div class="column kids">
     <div class="content">
-    <img src="shoes9.jpg" height="200px" width="100%" class="responsive">
+    <img src="shoes9.jpg" height="200px" width="100%" >
       <h4 class="responsive-font-example">Kid's Roller Skating Shoes Automatic Walking Shoes with Double-Row Wheel<br><br>
       <p><b>&#8377; 1,500.00</b>
 	  <p class="fa fa-star checked">
@@ -192,29 +202,12 @@
   </div>
 </div>
 </div>
-
 <script>
 		function cartAlert(){
-			$(".bootstrap-growl").remove();
-			$.bootstrapGrowl("Success! Product added to cart successfully...",{
-			type: "success",
-			offset: {from: "top",amount:80},
-			align: "center",
-			width: 500,
-			delay: 5000,
-			allow_dismiss: true
-			});
+			alert("Success! Product added to cart successfully...");
 		}
 		function wishlistAlert(){
-			$(".bootstrap-growl").remove();
-			$.bootstrapGrowl("Product added to wishlist successfully...",{
-			type: "dark",
-			offset: {from: "top",amount:80},
-			align: "center",
-			width: 500,
-			delay: 5000,
-			allow_dismiss: true
-			});
+			alert("Success! Product added to wishlist successfully...");
 		}
 </script>	
 <script>

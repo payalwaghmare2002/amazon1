@@ -4,27 +4,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="deals.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
 <style>
 
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <a class="nav-link" href="index.html" color="white"><font face="cambrila" size="5px" color="white">Home</font></a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">&emsp;
+				<a href="login.html"id="a">Login</a>&emsp;
+				<a href="sign in.html"id="a">Sign in</a>&emsp;
+				<a href="aboutpage.html"id="a"> About us</a>&emsp;
+				<a href="contact8.html"id="a"onclick="myFunction()">Contact us</a>&emsp;
+				<a href="ProdSlideshow.html"id="a">Gallery</a>&emsp;
+            </div>
+        </div>
 </nav><br><br>
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-	  <img border="2" src="offer1.jpeg" width="350" height="350">
+	  <img border="2" src="offer1.jpeg" width="298" height="350">
     </div>
     <div class="col-sm-6">
-	  <p><font size="8px">White Fastrack Watch<br> ₹ 500 </font><h4 style="color:navy;">Get Latest Price</h4>
+	  <p><font size="8px">White Fastrack Watch<br>  &#8377; 500 </font><h4 style="color:navy;">Get Latest Price</h4>
 	  <p class="fa fa-star checked">
 <p class="fa fa-star checked">
 <p class="fa fa-star checked">
@@ -52,9 +65,9 @@
   </table>
 	 </p>
     </div> 
-    <div class="col-sm-2">
+   <div class="col-sm-2">
 		<div class="card"><br><br>
-			<center><b><h3>Price : &#8377; 500.00 </b></h3>
+			<center><div class="h1"><b>Price : &#8377; 500.00 </div></b>
 			<p style="font-size:20px"><label>Quantity : &emsp;</label>
 			<select>
 				<option> 1 </option>
@@ -63,13 +76,13 @@
 				<option> 4 </option>
 				<option> 5 </option>
 			</select></p><br><br>
-			<a href="shipping details.html"><button type="button" class="btn btn-warning btn-circle btn-sm" ><font size="3px" color="navy">Buy Now</font></button><br><br></a>
-			<button class="btn btn-success btn-circle btn-sm" onclick="cartAlert()"><font color="white"><font size="3px" color="navy">Add to cart &#128722;</font></a></button><br><br> 
-			<button class="btn btn-secondary btn-circle btn-sm" onclick="wishlistAlert()"><font color="white"><font size="3px" color="white">Add to wishlist &#10084;</font></a></button><br><br> <br><br> 
+			<a href="shipping details.html"><button type="button" class="btn btn-warning btn-circle btn-sm" id="newfont"><font color="navy">Buy Now</font></button><br><br></a>
+			<button class="btn btn-success btn-circle btn-sm" onclick="cartAlert()" id="newfont"><font color="navy">Add to cart &#128722;</font></a></button><br><br> 
+			<button class="btn btn-secondary btn-circle btn-sm" onclick="wishlistAlert()"id="newfont"><font color="white">Add to wishlist &#10084;</font></a></button><br><br> <br><br> 
 			</center>
 		</div>
 	</div>
-
+	</div>
 <div class="main">
 <hr/>
 <h1><b>R<font size="5px" face="cambrila">elated Products</font></b></h1>
@@ -195,29 +208,12 @@
   </div>
 </div>
 </div>
-
 <script>
 		function cartAlert(){
-			$(".bootstrap-growl").remove();
-			$.bootstrapGrowl("Success! Product added to cart successfully...",{
-			type: "success",
-			offset: {from: "top",amount:80},
-			align: "center",
-			width: 500,
-			delay: 5000,
-			allow_dismiss: true
-			});
+			alert("Success! Product added to cart successfully...");
 		}
 		function wishlistAlert(){
-			$(".bootstrap-growl").remove();
-			$.bootstrapGrowl("Product added to wishlist successfully...",{
-			type: "dark",
-			offset: {from: "top",amount:80},
-			align: "center",
-			width: 500,
-			delay: 5000,
-			allow_dismiss: true
-			});
+			alert("Success! Product added to wishlist successfully...");
 		}
 </script>	
 <script>

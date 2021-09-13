@@ -2,28 +2,17 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css "href="new2.css"/>
+	<link rel="stylesheet" type="text/css "href="search.css"/>
 	<link rel="stylesheet" type="text/css "href="newcss.css"/>
 	<link rel="stylesheet" type="text/css "href="about.css"/>
-	<link rel="stylesheet" type="text/css "href="search.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-
-</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
 
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
 #tsnse1
 {
 border:2px solid black;
@@ -67,6 +56,12 @@ padding:20px;
 	width:150;
 	height:150;
 }
+#id1
+{
+display:inline-block;
+padding:6px;
+margin-left:10px;
+}
 }
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
 @media (max-width: 1199.98px) {
@@ -77,9 +72,16 @@ display:inline-block;
 width:300px;
 height:450px;
 margin-left:20px;
-margin-top:180px;
+margin-top:150px;
 margin-bottom:120px;
 padding:0px;
+}
+#id1
+{
+display:inline;
+padding:6px;
+margin-left:-1;
+color:white;
 }
 }
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
@@ -131,10 +133,25 @@ padding:0px;
   display: table;
   clear: both;
 }
+@media (min-width: 1200px) {
+.text{
+	font-size:25px;
+	color:white;
+}
+}
+@media (max-width: 1199.98px) {
+ .text{
+	display:none;
+}
+}
 a{color:white;}
+#link1{
+	font-size:10px;
+}
 </style>
 </head>
-<body>
+<body style="width:100%">
+	
 <div class="container-fluid p-4 my-7 bg-dark text-white">
 	<h1 align="center">Dmart <small><i>Shop...anytime...anywhere...</i></small></h1>
 	</div>	
@@ -160,30 +177,34 @@ function closeNav() {
     <a href="aboutpage.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="ProdSlideshow.html">Gallery</a>
-    <a href="">Contact</a>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="glyphicon glyphicon-list" color="white"></span></span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><span class="glyphicon glyphicon-list" style="color:white;"></span></span>
 </div>
 <div id="id1">
-<a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+<a href="index.html" class="text"><i class="fa fa-fw fa-home"></i>Home</a>
 </div>
 <div id="id1">
-<a href="ProdSlideshow.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a>
+<a href="ProdSlideshow.html"class="text"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a>
 </div>	
 <div id="id1">
-<a href="login.html"><i class="fa fa-fw fa-sign-in"></i> Login</a>
+<a href="login.html"class="text"><i class="fa fa-fw fa-sign-in"></i> Login</a>
 </div>
 <div id="id1">
-<a href="sign in.html"><i class="fa fa-fw fa-user"></i> Sign in</a>
+<a href="sign in.html"class="text"><i class="fa fa-fw fa-user"></i> Sign in</a>
 </div>
 <div id="id1">
-<a href="aboutpage.html"><span class="fa fa-address-card"></span> About us</a>
+<a href="aboutpage.html"class="text"><span class="fa fa-address-card"></span> About us</a>
 </div>
 <div id="id1">
- <a href="contact.html" onclick="myFunction()"><i class="fa fa-fw fa-envelope"></i>Contact us</a>
+ <a href="contact8.html" onclick="myFunction()"class="text"><i class="fa fa-fw fa-envelope"></i>Contact us</a>
 </div>
 </div>
+<script>
+function myFunction() {
+  alert("Contact us loading");
+}
+</script>
 <br><br>
 <script>
 function myFunction() {
@@ -195,12 +216,12 @@ function myFunction() {
 <div class="container-fluid">
 <font style size="4px" color="Navy">
 <div class="column">
-<a href="Top offers.html"><img src="top7.jfif" class="rounded"  width="150" height="100" class="img"></a>
+<a href="grainpage.html"><img src="top7.jfif" class="rounded"  width="150" height="100" class="img"></a>
 <br><b>Top Offers</b>
 </div>
  
 <div class="column">
-<a href="electronicsdemo.html"><img src="mi2.jpeg" class="rounded"  width="100" height="100"class="img"></a>
+<a href="grainpage.html"><img src="mi2.jpeg" class="rounded"  width="100" height="100"class="img"></a>
 <br><b>Electronics</b>
 </div>
  
@@ -220,7 +241,7 @@ function myFunction() {
 </div>
 
 <div class="column">
-<a href="flip.html"><img src="top1.jfif" class="rounded"  width="100" height="100"class="img"></a>
+<a href="#"><img src="top1.jfif" class="rounded"  width="100" height="100"class="img"></a>
 <br><b>Mobiles</b>
 </div>
 
@@ -277,8 +298,8 @@ function myFunction() {
 <div id="news1"><div class="space">
 <div id="tsnse1"><div id="div1">
 <div class="row"><font color="black">
-<b>Upgrade your home |<br>
-Brands and more</b><br><br>
+<b>Upgrade your home |  <br>
+Brands and more</b><br>
 </div>
 <div class="row">
 <img src="div1.jfif" height="120px" width="120px"></img>&emsp;&emsp;
@@ -289,7 +310,7 @@ Brands and more</b><br><br>
 Furniture<br><br>
 </div>
 <div class="col-sm-6">
-Daily<br> Essentials<br>
+Daily Essentials<br><br>
 </div>
 </div>
 <div class="row">
@@ -305,9 +326,9 @@ Fruits<br><br>
 </div>
 </div></div>
 </div>
-<div id="tsnse1"><div id="div1">
+<div id="tsnse1"><div id="div2">
 <div class="row">
-<b>Revamp your home in style<br></b><br>
+<b>Revamp your home in style<br><br></b>
 </div>
 <div class="row">
 <img src="app1.png" height="120px" width="120px" class="img1">&emsp;&emsp;
@@ -318,7 +339,7 @@ Fruits<br><br>
 Kitchen Appliances<br><br>
 </div>
 <div class="col-sm-6">
-Bedsheets, <br>Curtains<br><br>
+Bedsheets,Curtains<br><br>
 </div>
 </div>
 <div class="row">
@@ -336,7 +357,7 @@ Home Decoration<br><br>
 </div>
 <div id="tsnse1"><div id="div1">
 <div class="row">
-<b>Top rated, premium quality<br> 
+<b>Top rated, premium quality <br>
 Brands and more</b><br><br>
 </div>
 <div class="row">
@@ -360,7 +381,7 @@ iPhone<br><br>
 Apple<br><br>
 </div>
 <div class="col-sm-6">
-Woman <br> Watches<br><br>
+Woman Watches<br><br>
 </div>
 </div></div>
 </div></div>
@@ -428,7 +449,7 @@ Woman <br> Watches<br><br>
 	  </div>
 	</div>
 	
-	<div class="card" style="width: 22rem;">
+	<div class="card" style="width: 20rem;">
 	  <div class="card-body">
 		<img class="card-img-top" src="offer7.jpeg" width="150" height="150">
 		<p class="card-text"><br><b>Pendrives & Hard Disk</b><br>
@@ -513,14 +534,15 @@ Woman <br> Watches<br><br>
 </div></font><hr><br><br>
 
 <footer>
+<container-fluid>
   <div class="container-fluid text-center text-md-left">
     <div class="row">
-      <div class="col-sm-4 mb-0">
+      <div class="col-sm-2 mb-0">
         <h3 class="text-uppercase">Quick Links</h3>
           <font color="white"><h4><br><br>
-            <a href="contact8.html">Contact us</a><br>
-            <a href="aboutpage.html">About us</a><br>
-	    <a href="ProdSlideshow.html">Gallery</h4></a>
+            <a href="contact8.html">Contact us<br><br></a>
+            <a href="aboutpage.html">About us<br><br></a>
+			<a href="Prodslideshow.html">Gallery</h4><br></a>
           </font>
        </div>
 	  
@@ -528,14 +550,14 @@ Woman <br> Watches<br><br>
 				<h3 class="text-uppercase">Contact us :</h3>
 				<p><h4><br>
 					<i style="font-size:24px" class="fa">&#xf095;</i> &emsp;Tel : 020 8532 9830<br><br>
-					<i style="font-size:24px" class="fa">&#xf0e0;</i>&emsp;Email : DmartShop@gmail.com</h4></p></font>
+					<i style="font-size:24px" class="fa">&#xf0e0;</i>&emsp;Email : dtfurniture123@gmail.com</h4></p></font>
 		</div>
       <div class="col-md-3 ">
         <h3 class="text-uppercase">Follow us on:</h3><br>
-        <a href="https://www.facebook.com/login/web/"><i class="fa fa-lg fa-facebook"></i></a><br><br>
-        <a href="https://twitter.com/login?lang=en"><i class="fa fa-lg fa-twitter"></i></a><br><br>
-        <a href="https://github.com/"><i class="fa fa-lg fa-github"></i></a><br><br>
-        <a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a><br><br>
+        <a href="#"><i class="fa fa-lg fa-facebook"></i></a><br><br>
+        <a href="#"><i class="fa fa-lg fa-twitter"></i></a><br><br>
+        <a href="#"><i class="fa fa-lg fa-github"></i></a><br><br>
+        <a href="#"><i class="fa fa-instagram"></i></a><br><br>
 		</div>
     </div>
   </div><hr/>

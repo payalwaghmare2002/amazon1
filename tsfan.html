@@ -4,26 +4,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="deals.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="deals.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-growl/1.0.0/jquery.bootstrap-growl.min.js"></script>
 <style>
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <a class="nav-link" href="index.html" color="white"><font face="cambrila" size="5px" color="white">Home</font></a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">&emsp;
+				<a href="login.html"id="a">Login</a>&emsp;
+				<a href="sign in.html"id="a">Sign in</a>&emsp;
+				<a href="aboutpage.html"id="a"> About us</a>&emsp;
+				<a href="contact8.html"id="a"onclick="myFunction()">Contact us</a>&emsp;
+				<a href="ProdSlideshow.html"id="a">Gallery</a>&emsp;
+            </div>
+        </div>
 </nav><br><br>
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-	  <img border="2" src="tops8.jpeg" width="300" height="350">
+	  <img border="2" src="tops8.jpeg" width="298" height="350">
     </div>
     <div class="col-sm-6">
-	  <p><h1 class="responsive-font">HAVELLS Ventil Air DX 200mm 5 Blade Exhaust Fan<br>₹1,299 <font size="5px"><strike>₹1,900</font></strike></font></h1>
+	  <p><font size="8px">HAVELLS Ventil Air DX 200mm 5 Blade Exhaust Fan<br> &#8377;1,299 <font size="5px"><strike> &#8377;1,900</font></strike></font></h1>
 	  <p class="fa fa-star checked">
 		<p class="fa fa-star checked">
 		<p class="fa fa-star checked">
@@ -55,11 +68,10 @@
     </tbody>
   </table>
 	 </p>
-    </div><div class="col-sm-2">
-  <table class="table table-borderless" class="responsive">
-		
+    </div>
+	 <div class="col-sm-2">
 		<div class="card"><br><br>
-			<center><b><h3>Price : &#8377; 1,299.00 </b></h3>
+			<center><div class="h1"><b>Price : &#8377; 500.00 </div></b>
 			<p style="font-size:20px"><label>Quantity : &emsp;</label>
 			<select>
 				<option> 1 </option>
@@ -68,12 +80,13 @@
 				<option> 4 </option>
 				<option> 5 </option>
 			</select></p><br><br>
-			<a href="shipping details.html"><button type="button" class="btn btn-warning btn-circle btn-sm" ><font size="3px" color="navy">Buy Now</font></button><br><br></a>
-			<button class="btn btn-success btn-circle btn-sm" onclick="cartAlert()"><font color="white"><font size="3px" color="navy">Add to cart &#128722;</font></a></button><br><br> 
-			<button class="btn btn-secondary btn-circle btn-sm" onclick="wishlistAlert()"><font color="white"><font size="3px" color="white">Add to wishlist &#10084;</font></a></button><br><br> <br><br> 
+			<a href="shipping details.html"><button type="button" class="btn btn-warning btn-circle btn-sm" id="newfont"><font color="navy">Buy Now</font></button><br><br></a>
+			<button class="btn btn-success btn-circle btn-sm" onclick="cartAlert()" id="newfont"><font color="navy">Add to cart &#128722;</font></a></button><br><br> 
+			<button class="btn btn-secondary btn-circle btn-sm" onclick="wishlistAlert()"id="newfont"><font color="white">Add to wishlist &#10084;</font></a></button><br><br> <br><br> 
 			</center>
 		</div>
-	</table></div>
+	</div>
+	</div>
 
 <div class="main">
 <hr/>
